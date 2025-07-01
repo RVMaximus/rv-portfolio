@@ -5,7 +5,19 @@ function Navigation() {
   return (
     <>
       <header className={styles.header}>
-        <h2>Ravi</h2>
+        <div className={styles.nameSec}>
+          <h2>
+            <NavLink to="/" className={styles.name}>
+              ravi
+            </NavLink>
+          </h2>
+          <button
+            className={styles.resumeBtn}
+            onClick={() => window.open("./resume.pdf", "_blank")}
+          >
+            Resume
+          </button>
+        </div>
         <nav className={styles.nav}>
           <NavLink
             to="/"
@@ -38,7 +50,12 @@ function Navigation() {
             Blogs
           </NavLink>
         </nav>
-        <button>Resume</button>
+        <button
+          className={styles.resumeBtn}
+          onClick={() => window.open("./resume.pdf", "_blank")}
+        >
+          Resume
+        </button>
       </header>
     </>
   );

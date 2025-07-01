@@ -1,0 +1,142 @@
+@use "../../styles/mixins" as *;
+
+.gridContainer {
+    padding: 2rem 8rem;
+
+    .redirection {
+        width: 3rem;
+        height: 2rem;
+        padding: 0.2rem;
+        border-radius: 1rem;
+    }
+
+    .readMore {
+        font-size: 0.8rem;
+        width: 3rem;
+        height: 2rem;
+        padding: 0.5rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 1rem;
+        transition: width 0.5s ease-in-out;
+
+        .readMoreTxt {
+            opacity: 0;
+            white-space: nowrap;
+            transition: opacity 0.5s ease
+        }
+    }
+
+    .readMore:hover {
+        width: 7.7rem;
+
+        .readMoreTxt {
+            opacity: 1;
+        }
+    }
+
+    .gridLayout {
+        .cardDivCommon {
+            background: var(--cardBackground);
+            box-shadow: var(--cardBoxShadow);
+            border-radius: 30px;
+            padding: 2rem;
+        }
+
+        .introDiv {
+            .memoji {
+                max-width: 15%;
+            }
+
+            .intro {
+                margin: 10px 0;
+
+                span {
+                    font-weight: bolder;
+                    font-style: italic;
+                    font-size: 1.5rem;
+                    font-family: cursive;
+                }
+            }
+        }
+
+        .blogDiv {
+            .blogGlimpse {
+                margin: 15px 0;
+            }
+
+            .blogTitle {
+                font-size: 1.5rem;
+            }
+        }
+
+        .socialMediaDiv {
+            @include centerAlignVH;
+            height: 80%;
+        }
+
+        .contactDiv {
+            div {
+                margin: 15px 0;
+            }
+        }
+
+
+        .toolsContainer {
+            overflow: hidden;
+            .toolsGrid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                column-gap: 10px;
+                row-gap: 20px;
+                rotate: 45deg;
+
+                .toolsDiv {
+                    box-shadow: var(--cardBoxShadow);
+                    border-radius: 15px;
+                    height: 120px;
+                    width: 100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+    .gridContainer {
+        padding: 0.5rem 2rem;
+
+        .gridLayout {
+
+            .cardDivCommon {
+                padding: 1rem;
+            }
+
+            .blogDiv {
+                .blogGlimpse {
+                    font-size: 0.7rem;
+                }
+
+                .blogTitle {
+                    font-size: 0.95rem;
+                }
+            }
+        }
+    }
+}
+
+[data-theme="light"] {
+    --cardBackground: rgb(255 255 255 / 33%);
+    --cardBoxShadow: rgb(217 217 217) 0px 0px 0px 1px inset;
+}
+
+[data-theme="dark"] {
+    --cardBackground: rgb(34, 34, 34);
+    --cardBoxShadow: rgb(93 93 93 / 79%) 0px 0px 0px 1px inset;
+}
