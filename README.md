@@ -1,7 +1,7 @@
-# 🚀 Ravi Rajar Portfolio
+# 🚀 Raviraja R Portfolio
 
 Welcome to my interactive 3D portfolio!  
-This project is built using **React**, **Vite**, **Tailwind CSS**, and **Babylon.js** to deliver both a traditional web interface and immersive 3D experiences.
+This project is built using **React**, **Vite**, and **Babylon.js** to deliver both a traditional web interface and immersive 3D experiences.
 
 ---
 
@@ -27,8 +27,3 @@ src/
 ├── routes.ts # App routing config
 ├── App.tsx # Entry component
 ├── main.tsx # App bootstrap
-
-git clone https://github.com/RVMaximus/
-cd ravirajar-portfolio
-npm install
-npm run dev
