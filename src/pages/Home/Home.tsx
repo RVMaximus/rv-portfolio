@@ -9,31 +9,42 @@ export function Home() {
 
   const layouts = {
     lg: [
-      { i: "a", x: 0, y: 0, w: 5.5, h: 1.5 },
-      { i: "b", x: 0, y: 1.5, w: 5.5, h: 1.7 },
-      { i: "c", x: 8, y: 0, w: 2, h: 1 },
-      { i: "d", x: 10, y: 0, w: 2, h: 1 },
-      { i: "e", x: 8, y: 3, w: 4, h: 1.2 },
-      { i: "f", x: 5.5, y: 0, w: 2.5, h: 3.2 },
-      { i: "g", x: 10, y: 2, w: 2, h: 1 },
-      { i: "h", x: 8, y: 2, w: 2, h: 1 },
+      { i: "intro", x: 0, y: 0, w: 5.5, h: 1.5 },
+      { i: "blog", x: 0, y: 1.5, w: 5.5, h: 1.7 },
+      { i: "linked", x: 8, y: 0, w: 2, h: 1 },
+      { i: "git", x: 10, y: 0, w: 2, h: 1 },
+      { i: "map", x: 10, y: 2, w: 2, h: 1 },
+      { i: "yt", x: 8, y: 2, w: 2, h: 1 },
+      { i: "tools", x: 5.5, y: 0, w: 2.5, h: 3.2 },
+      { i: "contact", x: 8, y: 3, w: 4, h: 1.2 },
     ],
-    // md: [
-    //   { i: "a", x: 0, y: 0, w: 2, h: 1 },
-    //   { i: "b", x: 2, y: 1, w: 1, h: 1 },
-    //   { i: "c", x: 3, y: 1.5, w: 1, h: 0.5 },
-    // ],
-    // sm: [
-    //   { i: "a", x: 0, y: 0, w: 0.5, h: 0.25 },
-    //   { i: "b", x: 0.5, y: 0.25, w: 0.5, h: 0.5 },
-    //   { i: "c", x: 1, y: 1, w: 0.5, h: 0.25 },
-    // ],
+    md: [
+      { i: "intro", x: 0, y: 0, w: 10, h: 2 },
+      { i: "blog", x: 0, y: 2, w: 10, h: 1.5 },
+      { i: "linked", x: 0, y: 3.5, w: 5, h: 1 },
+      { i: "git", x: 5, y: 3.2, w: 5, h: 1 },
+      { i: "map", x: 0, y: 4.2, w: 5, h: 1 },
+      { i: "yt", x: 5, y: 4.2, w: 5, h: 1 },
+      { i: "tools", x: 0, y: 5.2, w: 2.5, h: 3.2 },
+      { i: "contact", x: 2.5, y: 8.4, w: 7.5, h: 1.2 },
+    ],
+
+    sm: [
+      { i: "intro", x: 0, y: 0, w: 5, h: 1.5 },
+      { i: "blog", x: 0, y: 1.5, w: 5, h: 1.7 },
+      { i: "linked", x: 0, y: 3, w: 2, h: 1 },
+      { i: "git", x: 2, y: 3, w: 2, h: 1 },
+      { i: "map", x: 0, y: 4, w: 2, h: 1 },
+      { i: "yt", x: 2, y: 4, w: 2, h: 1 },
+      { i: "tools", x: 0, y: 5, w: 2, h: 3.2 },
+      { i: "contact", x: 2, y: 8.2, w: 2, h: 1.2 },
+    ],
   };
 
   const getIntro = () => {
     return (
       <>
-        <img src={"./RVMemoji.png"} className={styles.memoji} />
+        <img src={"./WelcomeAvatar.png"} className={styles.memoji} />
         <p className={styles.intro}>
           Hi there <i className="fa-regular fa-face-smile-wink"></i>. Im
           <span> Ravi </span>a passionate immersive web developer building
@@ -176,15 +187,21 @@ export function Home() {
           <div className={styles.toolsDiv} title="My SQl">
             <img src="./MySQL.svg" />
           </div>
-          <div className={styles.toolsDiv}></div>
-          <div className={styles.toolsDiv}></div>
+          <div className={styles.toolsDiv} title="Javascript">
+            <img src="./JavaScript.svg" />
+          </div>
+          <div className={styles.toolsDiv} title="VS Code">
+            <img src="./VSCode.svg" />
+          </div>
           <div className={styles.toolsDiv} title="Typescript">
             <img src="./TypeScript.svg" />
           </div>
           <div className={styles.toolsDiv} title="Python">
             <img src="./Python.svg" />
           </div>
-          <div className={styles.toolsDiv}></div>
+          <div className={styles.toolsDiv} title="Azure">
+            <img src="./Azure.svg" />
+          </div>
           <div className={styles.toolsDiv} title="React JS">
             <img src="./React.svg" />
           </div>
@@ -194,11 +211,15 @@ export function Home() {
           <div className={styles.toolsDiv} title="Azure Devops">
             <img src="./AzureDevops.svg" />
           </div>
-          <div className={styles.toolsDiv}></div>
+          <div className={styles.toolsDiv} title="CSS">
+            <img src="./CSS3.svg" />
+          </div>
           <div className={styles.toolsDiv} title="HTML 5">
             <img src="./HTML5.svg" />
           </div>
-          <div className={styles.toolsDiv}></div>
+          <div className={styles.toolsDiv} title="Vite">
+            <img src="./Vite.svg" />
+          </div>
         </div>
       </>
     );
@@ -215,40 +236,40 @@ export function Home() {
           isDraggable={false}
         >
           <div
-            key={"a"}
+            key={"intro"}
             className={`${styles.introDiv} ${styles.cardDivCommon}`}
           >
             {getIntro()}
           </div>
           <div
-            key={"b"}
+            key={"blog"}
             className={`${styles.cardDivCommon} ${styles.blogDiv}`}
           >
             {getBlog()}
           </div>
-          <div key={"c"} className={`${styles.cardDivCommon}`}>
+          <div key={"linked"} className={`${styles.cardDivCommon}`}>
             {getLinkedIn()}
           </div>
-          <div key={"d"} className={`${styles.cardDivCommon}`}>
+          <div key={"git"} className={`${styles.cardDivCommon}`}>
             {getGitHub()}
           </div>
-          <div key={"g"} className={`${styles.mapDiv}`}>
+          <div key={"map"} className={`${styles.mapDiv}`}>
             {getMap()}
           </div>
-          <div key={"h"} className={`${styles.ytDiv}`}>
+          <div key={"yt"} className={`${styles.ytDiv}`}>
             {getYT()}
           </div>
           <div
-            key={"e"}
-            className={`${styles.contactDiv} ${styles.cardDivCommon}`}
-          >
-            {getContact()}
-          </div>
-          <div
-            key={"f"}
+            key={"tools"}
             className={`${styles.cardDivCommon} ${styles.toolsContainer}`}
           >
             {getTools()}
+          </div>
+          <div
+            key={"contact"}
+            className={`${styles.contactDiv} ${styles.cardDivCommon}`}
+          >
+            {getContact()}
           </div>
         </ResponsiveGridLayout>
       </div>

@@ -1,0 +1,155 @@
+@use "../../styles/mixins" as *;
+
+@mixin commonCard {
+    background: var(--cardBackground);
+    box-shadow: var(--cardBoxShadow);
+    border-radius: 30px;
+}
+
+.gridContainer {
+    padding: 2rem 8rem;
+
+    .commonCardDiv {
+        @include commonCard;
+    }
+
+    .redirection {
+        width: 3rem;
+        height: 2rem;
+        padding: 0.2rem;
+        border-radius: 1rem;
+    }
+
+    .profileDiv {
+        padding: 1rem;
+
+        .profileContainer {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+
+            .profileImg {
+                width: 4rem;
+            }
+        }
+
+        .multi {
+            background: #4bcc72;
+            background: radial-gradient(circle, rgba(75, 204, 114, 1) 0%, rgba(169, 87, 199, 1) 51%, rgba(237, 221, 83, 1) 100%);
+            background-clip: text;
+            color: transparent;
+        }
+
+        .health {
+            background: #4b58cc;
+            background: radial-gradient(circle, rgba(75, 88, 204, 1) 0%, rgba(169, 87, 199, 1) 51%, rgba(237, 221, 83, 1) 100%);
+            background-clip: text;
+            color: transparent;
+        }
+
+        .webXR {
+            background: #cc4b67;
+            background: radial-gradient(circle, rgba(204, 75, 103, 1) 0%, rgba(169, 87, 199, 1) 51%, rgba(237, 221, 83, 1) 100%);
+            background-clip: text;
+            color: transparent;
+        }
+
+        .profileDesc {
+            margin: 10px 0;
+        }
+
+    }
+
+    .experienceDiv {
+        padding: 1rem;
+
+        .experienceHeader {
+            font-family: cursive;
+        }
+
+        .experienceContainer {
+            margin: 2rem 0;
+            border: 1px solid rgba(255, 0, 0, 0.23);
+            border-radius: 20px;
+            padding: 1rem;
+
+            .expTitle {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+
+        .projectContainer {
+            margin: 1rem 0;
+
+            .projectImg {
+                max-width: 40%;
+                margin: 1rem 0;
+                border-radius: 20px;
+            }
+
+            .projectDesc {
+                margin: 1rem 0;
+            }
+        }
+    }
+
+    .educationDiv {
+        padding: 1rem;
+
+        .educationHeader {
+            font-family: cursive;
+        }
+
+        .educationContainer {
+            margin: 2rem 0;
+            border: 1px solid rgba(255, 0, 0, 0.23);
+            border-radius: 20px;
+            padding: 1rem;
+
+            .eduDiv {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .gridContainer {
+        padding: 0.5rem 2rem;
+
+        .profileDiv {
+            padding: 1rem;
+
+            .profileDesc {
+                margin: 10px 0;
+                font-size: 0.7rem;
+            }
+        }
+
+        .experienceDiv {
+            .projectContainer {
+                .projectDesc {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .gridContainer {
+        padding: 1rem 3rem;
+
+        .profileDiv {
+            padding: 1rem;
+
+            .profileDesc {
+                margin: 10px 0;
+            }
+        }
+    }
+}
