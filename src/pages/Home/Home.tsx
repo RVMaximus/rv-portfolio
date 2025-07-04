@@ -19,14 +19,14 @@ export function Home() {
       { i: "contact", x: 8, y: 3, w: 4, h: 1.2 },
     ],
     md: [
-      { i: "intro", x: 0, y: 0, w: 10, h: 2 },
-      { i: "blog", x: 0, y: 2, w: 10, h: 1.5 },
-      { i: "linked", x: 0, y: 3.5, w: 5, h: 1 },
-      { i: "git", x: 5, y: 3.2, w: 5, h: 1 },
-      { i: "map", x: 0, y: 4.2, w: 5, h: 1 },
-      { i: "yt", x: 5, y: 4.2, w: 5, h: 1 },
-      { i: "tools", x: 0, y: 5.2, w: 2.5, h: 3.2 },
-      { i: "contact", x: 2.5, y: 8.4, w: 7.5, h: 1.2 },
+    { i: "intro", x: 0, y: 0, w: 5, h: 1.5 },
+      { i: "blog", x: 0, y: 4.5, w: 5, h: 1.5 },
+      { i: "linked", x: 0, y: 1.5, w: 2.5, h: 1 },
+      { i: "git", x: 2.5, y: 1.5, w: 2.5, h: 1 },
+      { i: "map", x: 5, y: 0, w: 2.5, h: 1.25 },
+      { i: "yt", x: 5, y: 1.5, w: 2.5, h: 1 },
+      { i: "tools", x: 7.5, y: 0, w: 2.5, h: 4 },
+      { i: "contact", x: 0, y: 6, w: 7.5, h: 1.2 },
     ],
 
     sm: [

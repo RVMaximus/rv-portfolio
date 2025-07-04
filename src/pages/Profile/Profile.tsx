@@ -14,13 +14,13 @@ export function Profile() {
     ],
     md: [
       { i: "profile", x: 0, y: 0, w: 10, h: 1 },
-      { i: "experience", x: 0, y: 1, w: 5, h: 7.7 },
-      { i: "education", x: 0, y: 7.7, w: 5, h: 3.3 },
+      { i: "experience", x: 0, y: 1, w: 5, h: 7 },
+      { i: "education", x: 5, y: 1, w: 5, h: 7 },
     ],
     sm: [
       { i: "profile", x: 0, y: 0, w: 6, h: 1.5 },
-      { i: "experience", x: 0, y: 1.5, w: 6, h: 9.3 },
-      { i: "education", x: 0, y: 9.3, w: 6, h: 3.6 },
+      { i: "experience", x: 0, y: 1.5, w: 6, h: 7.4 },
+      { i: "education", x: 0, y: 9.3, w: 6, h: 3.3 },
     ],
   };
 
