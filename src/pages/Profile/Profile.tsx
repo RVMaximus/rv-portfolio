@@ -14,13 +14,13 @@ export function Profile() {
     ],
     md: [
       { i: "profile", x: 0, y: 0, w: 10, h: 1 },
-      { i: "experience", x: 0, y: 1, w: 5, h: 7 },
-      { i: "education", x: 5, y: 1, w: 5, h: 7 },
+      { i: "experience", x: 0, y: 1, w: 5, h: 8.5 },
+      { i: "education", x: 5, y: 1, w: 5, h: 8.5 },
     ],
-    sm: [
+    xs: [
       { i: "profile", x: 0, y: 0, w: 6, h: 1.5 },
-      { i: "experience", x: 0, y: 1.5, w: 6, h: 7.4 },
-      { i: "education", x: 0, y: 9.3, w: 6, h: 3.3 },
+      { i: "experience", x: 0, y: 1.5, w: 6, h: 8 },
+      { i: "education", x: 0, y: 9.3, w: 6, h: 3.5 },
     ],
   };
 
@@ -145,35 +145,34 @@ export function Profile() {
 
   return (
     <>
-      <div className={styles.gridContainer}>
-        <ResponsiveGridLayout
-          breakpoints={breakpoints}
-          cols={cols}
-          layouts={layouts}
-          isDraggable={false}
+      <ResponsiveGridLayout
+        className={styles.gridContainer}
+        breakpoints={breakpoints}
+        cols={cols}
+        layouts={layouts}
+        isDraggable={false}
+      >
+        <div
+          key="profile"
+          className={`${styles.commonCardDiv} ${styles.profileDiv}`}
         >
-          <div
-            key="profile"
-            className={`${styles.commonCardDiv} ${styles.profileDiv}`}
-          >
-            {getProfile()}
-          </div>
-          <div
-            key="experience"
-            className={`${styles.commonCardDiv} ${styles.experienceDiv}`}
-          >
-            <h3 className={styles.experienceHeader}>Work Experience</h3>
-            {getExperience()}
-          </div>
-          <div
-            key="education"
-            className={`${styles.commonCardDiv} ${styles.educationDiv}`}
-          >
-            <h3 className={styles.educationHeader}>Education</h3>
-            {getEducation()}
-          </div>
-        </ResponsiveGridLayout>
-      </div>
+          {getProfile()}
+        </div>
+        <div
+          key="experience"
+          className={`${styles.commonCardDiv} ${styles.experienceDiv}`}
+        >
+          <h3 className={styles.experienceHeader}>Work Experience</h3>
+          {getExperience()}
+        </div>
+        <div
+          key="education"
+          className={`${styles.commonCardDiv} ${styles.educationDiv}`}
+        >
+          <h3 className={styles.educationHeader}>Education</h3>
+          {getEducation()}
+        </div>
+      </ResponsiveGridLayout>
     </>
   );
 }

@@ -5,8 +5,10 @@
     box-shadow: var(--cardBoxShadow);
 }
 
-.gridContainer {
-    padding: 2rem 8rem;
+
+
+.gridLayout {
+    padding: 0 0.85rem;
 
     .redirection {
         width: 3rem;
@@ -41,180 +43,194 @@
         }
     }
 
-    .gridLayout {
-        .cardDivCommon {
-            @include commonBg;
-            border-radius: 30px;
-            padding: 2rem;
-            user-select: none;
-            -webkit-user-select: none;
-            -ms-user-select: none;
+    .cardDivCommon {
+        @include commonBg;
+        border-radius: 30px;
+        padding: 2rem;
+        user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+
+    .introDiv {
+        .memoji {
+            max-width: 15%;
         }
 
-        .introDiv {
-            .memoji {
-                max-width: 15%;
-            }
+        .intro {
+            margin: 10px 0;
 
-            .intro {
-                margin: 10px 0;
-
-                span {
-                    font-weight: bolder;
-                    font-style: italic;
-                    font-size: 1.5rem;
-                    font-family: cursive;
-                }
-            }
-        }
-
-        .blogDiv {
-            .blogGlimpse {
-                margin: 15px 0;
-            }
-
-            .blogTitle {
+            span {
+                font-weight: bolder;
+                font-style: italic;
                 font-size: 1.5rem;
                 font-family: cursive;
             }
         }
+    }
 
-        .socialMediaDiv {
-            @include centerAlignVH;
-            height: 80%;
+    .blogDiv {
+        .blogGlimpse {
+            margin: 15px 0;
         }
 
-        .contactDiv {
-            h2 {
-                font-family: cursive;
-            }
-            div {
-                margin: 15px 0;
-            }
+        .blogTitle {
+            font-size: 1.5rem;
+            font-family: cursive;
+        }
+    }
 
-            .mail {
-                color: #17bfdee6;
-            }
+    .socialMediaDiv {
+        @include centerAlignVH;
+        height: 80%;
+    }
+
+    .contactDiv {
+        h2 {
+            font-family: cursive;
         }
 
-        .mapDiv {
-            iframe {
-                border-radius: 30px;
-            }
+        div {
+            margin: 15px 0;
         }
 
-        .ytDiv {
-            @include commonBg;
+        .mail {
+            color: #17bfdee6;
+        }
+    }
+
+    .mapDiv {
+        iframe {
             border-radius: 30px;
-            padding: 1rem;
-            cursor: pointer;
+        }
+    }
 
-            .ytSong,
-            .ytAuthor {
-                font-size: 0.8rem;
-                margin: 2px 0;
+    .ytDiv {
+        @include commonBg;
+        border-radius: 30px;
+        padding: 1rem;
+        cursor: pointer;
+
+        .ytSong,
+        .ytAuthor {
+            font-size: 0.8rem;
+            margin: 2px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .ytAuthor {
+            color: green;
+        }
+
+
+        .ytStatus {
+            font-size: 0.7rem;
+            color: rgba(255, 0, 0, 0.729);
+
+            .play-1 {
+                animation-delay: 0s;
+            }
+
+            .play-2 {
+                animation-delay: 0.4s;
+            }
+
+            .play-3 {
+                animation-delay: 0.6s;
+            }
+
+            .offlineText {
+                font-size: 0.9rem !important;
+                animation: none !important;
+            }
+
+            @keyframes pulse {
+
+                0%,
+                100% {
+                    transform: scale(1);
+                    opacity: 0.5;
+                }
+
+                50% {
+                    transform: scale(1.4);
+                    opacity: 1;
+                }
+            }
+        }
+
+        .ytStatus span {
+            font-size: 0.7rem;
+            display: inline-block;
+            animation: pulse 0.8s infinite ease-in-out;
+        }
+    }
+
+
+    .toolsContainer {
+        overflow: hidden;
+
+        .toolsGrid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            column-gap: 10px;
+            row-gap: 20px;
+            rotate: 45deg;
+
+            .toolsDiv {
+                box-shadow: var(--cardBoxShadow);
+                border-radius: 15px;
+                height: 120px;
+                width: 100px;
                 display: flex;
                 justify-content: center;
-            }
+                align-items: center;
+                padding: 1rem;
 
-            .ytAuthor {
-                color: green;
-            }
-
-
-            .ytStatus {
-                font-size: 0.7rem;
-                color: rgba(255, 0, 0, 0.729);
-
-                .play-1 {
-                    animation-delay: 0s;
-                }
-
-                .play-2 {
-                    animation-delay: 0.4s;
-                }
-
-                .play-3 {
-                    animation-delay: 0.6s;
-                }
-
-                .offlineText {
-                    font-size: 0.9rem !important;
-                    animation: none !important;
-                }
-
-                @keyframes pulse {
-
-                    0%,
-                    100% {
-                        transform: scale(1);
-                        opacity: 0.5;
-                    }
-
-                    50% {
-                        transform: scale(1.4);
-                        opacity: 1;
-                    }
-                }
-            }
-
-            .ytStatus span {
-                font-size: 0.7rem;
-                display: inline-block;
-                animation: pulse 0.8s infinite ease-in-out;
-            }
-        }
-
-
-        .toolsContainer {
-            overflow: hidden;
-
-            .toolsGrid {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: repeat(3, 1fr);
-                column-gap: 10px;
-                row-gap: 20px;
-                rotate: 45deg;
-
-                .toolsDiv {
-                    box-shadow: var(--cardBoxShadow);
-                    border-radius: 15px;
-                    height: 120px;
-                    width: 100px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 1rem;
-                    
-                    img{
-                        max-width: 100%;
-                    }
+                img {
+                    max-width: 100%;
                 }
             }
         }
-
     }
+
 }
 
 @media (max-width: 768px) {
-    .gridContainer {
-        padding: 0.5rem 2rem;
 
-        .gridLayout {
+    .gridLayout {
 
-            .cardDivCommon {
-                padding: 1rem;
+        .cardDivCommon {
+            padding: 1rem;
+        }
+
+        .blogDiv {
+            .blogGlimpse {
+                font-size: 0.85rem;
             }
 
-            .blogDiv {
-                .blogGlimpse {
-                    font-size: 0.85rem;
-                }
+            .blogTitle {
+                font-size: 0.95rem;
+            }
+        }
+    }
+}
 
-                .blogTitle {
-                    font-size: 0.95rem;
-                }
+@media (max-width: 1199px) {
+    .gridLayout {
+        .cardDivCommon {
+            padding: 1rem;
+        }
+
+        .blogDiv {
+            .blogGlimpse {
+                font-size: 0.75rem;
+            }
+
+            .blogTitle {
+                font-size: 1.3rem;
             }
         }
     }

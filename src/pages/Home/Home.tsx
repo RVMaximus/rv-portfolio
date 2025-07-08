@@ -5,7 +5,7 @@ export function Home() {
   const ResponsiveGridLayout = WidthProvider(Responsive);
 
   const breakpoints = { lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 };
-  const cols = { lg: 12, md: 10, sm: 6, xs: 4, xxs: 2 };
+  const cols = { lg: 12, md: 10, sm: 8, xs: 4, xxs: 2 };
 
   const layouts = {
     lg: [
@@ -15,27 +15,26 @@ export function Home() {
       { i: "git", x: 10, y: 0, w: 2, h: 1 },
       { i: "map", x: 10, y: 2, w: 2, h: 1 },
       { i: "yt", x: 8, y: 2, w: 2, h: 1 },
-      { i: "tools", x: 5.5, y: 0, w: 2.5, h: 3.2 },
+      { i: "tools", x: 5.65, y: 0, w: 2.2, h: 3.2 },
       { i: "contact", x: 8, y: 3, w: 4, h: 1.2 },
     ],
     md: [
-    { i: "intro", x: 0, y: 0, w: 5, h: 1.5 },
-      { i: "blog", x: 0, y: 4.5, w: 5, h: 1.5 },
-      { i: "linked", x: 0, y: 1.5, w: 2.5, h: 1 },
-      { i: "git", x: 2.5, y: 1.5, w: 2.5, h: 1 },
-      { i: "map", x: 5, y: 0, w: 2.5, h: 1.25 },
-      { i: "yt", x: 5, y: 1.5, w: 2.5, h: 1 },
-      { i: "tools", x: 7.5, y: 0, w: 2.5, h: 4 },
-      { i: "contact", x: 0, y: 6, w: 7.5, h: 1.2 },
+      { i: "intro", x: 0, y: 0, w: 4, h: 1.5 },
+      { i: "blog", x: 0, y: 1.5, w: 4, h: 1.5 },
+      { i: "linked", x: 6, y: 0, w: 2, h: 1 },
+      { i: "git", x: 8, y: 0, w: 2, h: 1 },
+      { i: "map", x: 6, y: 1.5, w: 2, h: 1 },
+      { i: "yt", x: 8, y: 1.5, w: 2, h: 1 },
+      { i: "tools", x: 4, y: 0, w: 2, h: 3 },
+      { i: "contact", x: 6, y: 2.5, w: 4, h: 1 },
     ],
-
-    sm: [
-      { i: "intro", x: 0, y: 0, w: 5, h: 1.5 },
-      { i: "blog", x: 0, y: 1.5, w: 5, h: 1.7 },
-      { i: "linked", x: 0, y: 3, w: 2, h: 1 },
-      { i: "git", x: 2, y: 3, w: 2, h: 1 },
-      { i: "map", x: 0, y: 4, w: 2, h: 1 },
-      { i: "yt", x: 2, y: 4, w: 2, h: 1 },
+    xs: [
+      { i: "intro", x: 0, y: 0, w: 4, h: 1.5 },
+      { i: "blog", x: 0, y: 1.5, w: 4, h: 1.5 },
+      { i: "linked", x: 0, y: 3, w: 1, h: 1 },
+      { i: "git", x: 1, y: 3, w: 1, h: 1 },
+      { i: "map", x: 0, y: 4, w: 1, h: 1 },
+      { i: "yt", x: 1, y: 4, w: 1, h: 1 },
       { i: "tools", x: 0, y: 5, w: 2, h: 3.2 },
       { i: "contact", x: 2, y: 8.2, w: 2, h: 1.2 },
     ],
@@ -227,52 +226,50 @@ export function Home() {
 
   return (
     <>
-      <div className={styles.gridContainer}>
-        <ResponsiveGridLayout
-          className={styles.gridLayout}
-          layouts={layouts}
-          breakpoints={breakpoints}
-          cols={cols}
-          isDraggable={false}
+      <ResponsiveGridLayout
+        className={styles.gridLayout}
+        layouts={layouts}
+        breakpoints={breakpoints}
+        cols={cols}
+        isDraggable={false}
+      >
+        <div
+          key={"intro"}
+          className={`${styles.introDiv} ${styles.cardDivCommon}`}
         >
-          <div
-            key={"intro"}
-            className={`${styles.introDiv} ${styles.cardDivCommon}`}
-          >
-            {getIntro()}
-          </div>
-          <div
-            key={"blog"}
-            className={`${styles.cardDivCommon} ${styles.blogDiv}`}
-          >
-            {getBlog()}
-          </div>
-          <div key={"linked"} className={`${styles.cardDivCommon}`}>
-            {getLinkedIn()}
-          </div>
-          <div key={"git"} className={`${styles.cardDivCommon}`}>
-            {getGitHub()}
-          </div>
-          <div key={"map"} className={`${styles.mapDiv}`}>
-            {getMap()}
-          </div>
-          <div key={"yt"} className={`${styles.ytDiv}`}>
-            {getYT()}
-          </div>
-          <div
-            key={"tools"}
-            className={`${styles.cardDivCommon} ${styles.toolsContainer}`}
-          >
-            {getTools()}
-          </div>
-          <div
-            key={"contact"}
-            className={`${styles.contactDiv} ${styles.cardDivCommon}`}
-          >
-            {getContact()}
-          </div>
-        </ResponsiveGridLayout>
-      </div>
+          {getIntro()}
+        </div>
+        <div
+          key={"blog"}
+          className={`${styles.cardDivCommon} ${styles.blogDiv}`}
+        >
+          {getBlog()}
+        </div>
+        <div key={"linked"} className={`${styles.cardDivCommon}`}>
+          {getLinkedIn()}
+        </div>
+        <div key={"git"} className={`${styles.cardDivCommon}`}>
+          {getGitHub()}
+        </div>
+        <div key={"map"} className={`${styles.mapDiv}`}>
+          {getMap()}
+        </div>
+        <div key={"yt"} className={`${styles.ytDiv}`}>
+          {getYT()}
+        </div>
+        <div
+          key={"tools"}
+          className={`${styles.cardDivCommon} ${styles.toolsContainer}`}
+        >
+          {getTools()}
+        </div>
+        <div
+          key={"contact"}
+          className={`${styles.contactDiv} ${styles.cardDivCommon}`}
+        >
+          {getContact()}
+        </div>
+      </ResponsiveGridLayout>
     </>
   );
 }
