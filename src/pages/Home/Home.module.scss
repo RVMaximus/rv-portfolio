@@ -113,7 +113,7 @@
 
         .ytSong,
         .ytAuthor {
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             margin: 2px 0;
             display: flex;
             justify-content: center;
@@ -214,6 +214,10 @@
             .blogTitle {
                 font-size: 0.95rem;
             }
+        }
+
+        .ytDiv{
+            padding: 0.7rem;
         }
     }
 }
