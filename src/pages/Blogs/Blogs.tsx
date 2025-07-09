@@ -15,7 +15,7 @@ export function Blogs() {
   const [blogsConfig, setBlogsConfig] = useState(defaultBlogs);
 
   useEffect(() => {
-    fetch("./src/assets/config/blogs.json")
+    fetch("./blogs.json")
       .then((response) => {
         if (!response.ok) throw new Error("Failed to fetch blogs.json");
         return response.json();

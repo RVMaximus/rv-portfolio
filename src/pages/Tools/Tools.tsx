@@ -148,7 +148,7 @@ export function Tools() {
   const [toolsConfig, setToolsConfig] = useState(defaultTools);
 
   useEffect(() => {
-    fetch("./src/assets/config/tools.json")
+    fetch("./tools.json")
       .then((response) => {
         if (!response.ok) throw new Error("Failed to fetch tools.json");
         return response.json();
