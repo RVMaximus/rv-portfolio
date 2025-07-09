@@ -1,7 +1,7 @@
 import { Home } from "../pages/Home/Home";
 import { Profile } from "../pages/Profile/Profile";
 import { Blogs } from "../pages/Blogs/Blogs";
-import { Projects } from "../pages/Projects/Projects";
+// import { Projects } from "../pages/Projects/Projects";
 import { Tools } from "../pages/Tools/Tools";
 import { createBrowserRouter, Outlet } from "react-router-dom";
 import Navigation from "./Navigation";
@@ -22,7 +22,7 @@ export const routes = createBrowserRouter([
       { index: true, Component: Home },
       { path: "home", Component: Home },
       { path: "blogs", Component: Blogs },
-      { path: "projects", Component: Projects },
+      // { path: "projects", Component: Projects },
       { path: "profile", Component: Profile },
       { path: "tools", Component: Tools },
       { path: "*", Component: NotFound },

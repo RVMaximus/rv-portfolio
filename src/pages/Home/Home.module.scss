@@ -47,9 +47,6 @@
         @include commonBg;
         border-radius: 30px;
         padding: 2rem;
-        user-select: none;
-        -webkit-user-select: none;
-        -ms-user-select: none;
     }
 
     .introDiv {
@@ -105,65 +102,29 @@
         }
     }
 
-    .ytDiv {
+    .spotifyDiv {
         @include commonBg;
         border-radius: 30px;
         padding: 1rem;
         cursor: pointer;
 
-        .ytSong,
-        .ytAuthor {
+        .spotifySong {
             font-size: 0.7rem;
             margin: 2px 0;
-            display: flex;
-            justify-content: center;
+            font-family: "Fuzzy Bubbles", sans-serif;
+            @include centerAlignVH;
         }
 
-        .ytAuthor {
-            color: green;
-        }
-
-
-        .ytStatus {
+        .spotifyStatus {
             font-size: 0.7rem;
-            color: rgba(255, 0, 0, 0.729);
-
-            .play-1 {
-                animation-delay: 0s;
-            }
-
-            .play-2 {
-                animation-delay: 0.4s;
-            }
-
-            .play-3 {
-                animation-delay: 0.6s;
-            }
+            color: #6ed2b7;
+            @include centerAlignVH;
+            margin: 5px 0;
 
             .offlineText {
-                font-size: 0.9rem !important;
-                animation: none !important;
+                font-size: 0.9rem;
+
             }
-
-            @keyframes pulse {
-
-                0%,
-                100% {
-                    transform: scale(1);
-                    opacity: 0.5;
-                }
-
-                50% {
-                    transform: scale(1.4);
-                    opacity: 1;
-                }
-            }
-        }
-
-        .ytStatus span {
-            font-size: 0.7rem;
-            display: inline-block;
-            animation: pulse 0.8s infinite ease-in-out;
         }
     }
 
@@ -216,7 +177,7 @@
             }
         }
 
-        .ytDiv{
+        .spotifyDiv{
             padding: 0.7rem;
         }
     }

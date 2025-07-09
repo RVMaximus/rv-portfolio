@@ -14,7 +14,7 @@ export function Home() {
       { i: "linked", x: 8, y: 0, w: 2, h: 1 },
       { i: "git", x: 10, y: 0, w: 2, h: 1 },
       { i: "map", x: 10, y: 2, w: 2, h: 1 },
-      { i: "yt", x: 8, y: 2, w: 2, h: 1 },
+      { i: "spotify", x: 8, y: 2, w: 2, h: 1 },
       { i: "tools", x: 5.65, y: 0, w: 2.2, h: 3.2 },
       { i: "contact", x: 8, y: 3, w: 4, h: 1.2 },
     ],
@@ -24,7 +24,7 @@ export function Home() {
       { i: "linked", x: 6, y: 0, w: 2, h: 1 },
       { i: "git", x: 8, y: 0, w: 2, h: 1 },
       { i: "map", x: 6, y: 1.5, w: 2, h: 1 },
-      { i: "yt", x: 8, y: 1.5, w: 2, h: 1 },
+      { i: "spotify", x: 8, y: 1.5, w: 2, h: 1 },
       { i: "tools", x: 4, y: 0, w: 2, h: 3 },
       { i: "contact", x: 6, y: 2.5, w: 4, h: 1 },
     ],
@@ -34,7 +34,7 @@ export function Home() {
       { i: "linked", x: 0, y: 3, w: 1, h: 1 },
       { i: "git", x: 1, y: 3, w: 1, h: 1 },
       { i: "map", x: 0, y: 4, w: 1, h: 1 },
-      { i: "yt", x: 1, y: 4, w: 1, h: 1 },
+      { i: "spotify", x: 1, y: 4, w: 1, h: 1 },
       { i: "tools", x: 0, y: 5, w: 2, h: 3.2 },
       { i: "contact", x: 2, y: 8.2, w: 2, h: 1.2 },
     ],
@@ -130,31 +130,16 @@ export function Home() {
     );
   };
 
-  const getYT = () => {
+  const getSpotify = () => {
     return (
       <>
-        <div
-          className={styles.ytIcon}
-          onClick={() => {
-            window.open(
-              "https://music.youtube.com/watch?v=ZrMuqOJP6Fc",
-              "_blank"
-            );
-          }}
-        >
-          <i
-            className="fa-brands fa-youtube fa-3x"
-            style={{ color: "#FF0000" }}
-          ></i>
+        <div>
+          <img className={styles.spotifyIcon} src="./Spotify.svg" />
         </div>
-        <p className={styles.ytStatus}>
-          <span className="styles.play-1">●</span>
-          <span className="styles.play-2">●</span>
-          <span className="styles.play-3">●</span>{" "}
+        <span className={styles.spotifyStatus}>
           <span className={styles.offlineText}>Offline. Last played</span>
-        </p>
-        <p className={styles.ytSong}>Paravaiye Engu Irukkirai</p>
-        <p className={styles.ytAuthor}>Ilaiyaraaja</p>
+        </span>
+        <p className={styles.spotifySong}>Paravaiye Engu Irukkirai</p>
       </>
     );
   };
@@ -254,8 +239,17 @@ export function Home() {
         <div key={"map"} className={`${styles.mapDiv}`}>
           {getMap()}
         </div>
-        <div key={"yt"} className={`${styles.ytDiv}`}>
-          {getYT()}
+        <div
+          key={"spotify"}
+          className={`${styles.spotifyDiv}`}
+          onClick={() => {
+            window.open(
+              "https://open.spotify.com/track/7acN9HaStRBkP2UTOOpQ9q",
+              "_blank"
+            );
+          }}
+        >
+          {getSpotify()}
         </div>
         <div
           key={"tools"}

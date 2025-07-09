@@ -1,0 +1,142 @@
+[
+  {
+    "id": "azure",
+    "name": "Azure",
+    "description": "Cloud platform I use for hosting web apps, managing infrastructure, and integrating DevOps workflows.",
+    "link": "https://azure.microsoft.com/",
+    "imgUrl": "Azure"
+  },
+  {
+    "id": "azure-devops",
+    "name": "Azure DevOps",
+    "description": "Used for continuous integration and delivery (CI/CD), version control, and agile project management.",
+    "link": "https://azure.microsoft.com/en-us/products/devops",
+    "imgUrl": "AzureDevops"
+  },
+  {
+    "id": "babylonjs",
+    "name": "Babylon.js",
+    "description": "A powerful WebGL-based 3D engine I use to build immersive VR and WebXR experiences directly in the browser.",
+    "link": "https://www.babylonjs.com/",
+    "imgUrl": "Babylon"
+  },
+  {
+    "id": "html",
+    "name": "HTML",
+    "description": "The backbone of all web applications; I use HTML to structure content and ensure semantic, accessible markup.",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    "imgUrl": "HTML5"
+  },
+  {
+    "id": "css",
+    "name": "CSS",
+    "description": "Used to style web applications with responsiveness, layout control, and animations.",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "imgUrl": "CSS3"
+  },
+  {
+    "id": "sass",
+    "name": "SASS (SCSS)",
+    "description": "A CSS preprocessor that helps me write cleaner, modular, and more maintainable stylesheets.",
+    "link": "https://sass-lang.com/",
+    "imgUrl": "SASS"
+  },
+  {
+    "id": "react-bootstrap",
+    "name": "React Bootstrap",
+    "description": "A component library I use to quickly build consistent and responsive UIs with Bootstrap styling in React.",
+    "link": "https://react-bootstrap.github.io/",
+    "imgUrl": "ReactBootstrap"
+  },
+  {
+    "id": "javascript",
+    "name": "JavaScript",
+    "description": "My primary language for adding interactivity and logic to client-side applications.",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    "imgUrl": "JavaScript"
+  },
+  {
+    "id": "typescript",
+    "name": "TypeScript",
+    "description": "Strongly typed superset of JavaScript that helps me write safer, more robust, and scalable code.",
+    "link": "https://www.typescriptlang.org/",
+    "imgUrl": "TypeScript"
+  },
+  {
+    "id": "mysql",
+    "name": "MySQL",
+    "description": "A relational database I use for structured data storage and server-side data queries.",
+    "link": "https://www.mysql.com/",
+    "imgUrl": "MySQL"
+  },
+  {
+    "id": "mongodb",
+    "name": "MongoDB",
+    "description": "A NoSQL database I use for handling flexible, document-based data—ideal for dynamic applications and quick iterations.",
+    "link": "https://www.mongodb.com/",
+    "imgUrl": "MongoDB"
+  },
+  {
+    "id": "python",
+    "name": "Python",
+    "description": "A versatile language I use for scripting, server-side logic, and backend services.",
+    "link": "https://www.python.org/",
+    "imgUrl": "Python"
+  },
+  {
+    "id": "reactjs",
+    "name": "React.js",
+    "description": "The core of my frontend development—building fast, component-driven interfaces.",
+    "link": "https://reactjs.org/",
+    "imgUrl": "React"
+  },
+  {
+    "id": "vite",
+    "name": "Vite",
+    "description": "A modern build tool I use with React for fast development and optimized production builds.",
+    "link": "https://vitejs.dev/",
+    "imgUrl": "Vite"
+  },
+  {
+    "id": "colyseus",
+    "name": "Colyseus",
+    "description": "A multiplayer server framework I use to build synchronized, real-time multi-user VR experiences.",
+    "link": "https://www.colyseus.io/",
+    "imgUrl": "Colyseus"
+  },
+  {
+    "id": "vscode",
+    "name": "VS Code",
+    "description": "My go-to code editor, equipped with extensions and tooling that streamline my development workflow.",
+    "link": "https://code.visualstudio.com/",
+    "imgUrl": "VSCode"
+  },
+  {
+    "id": "react-redux",
+    "name": "React Redux",
+    "description": "A predictable state management library I use to manage and share state across components in large applications.",
+    "link": "https://redux.js.org/",
+    "imgUrl": "ReactRedux"
+  },
+  {
+    "id": "react-router",
+    "name": "React Router",
+    "description": "Handles client-side routing in my single-page applications for seamless page transitions and route control.",
+    "link": "https://reactrouter.com/",
+    "imgUrl": "ReactRouter"
+  },
+  {
+    "id": "chatgpt",
+    "name": "ChatGPT",
+    "description": "An AI assistant I use for brainstorming, debugging, writing, and accelerating development tasks across the stack.",
+    "link": "https://chat.openai.com/",
+    "imgUrl": "ChatGPT"
+  },
+  {
+    "id": "gemini",
+    "name": "Gemini",
+    "description": "Google’s AI tool I use for code generation, content ideation, and enhancing productivity in both frontend and backend workflows.",
+    "link": "https://gemini.google.com/",
+    "imgUrl": "Gemini"
+  }
+]

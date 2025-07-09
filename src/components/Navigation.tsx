@@ -13,7 +13,7 @@ function Navigation() {
           </h2>
           <button
             className={styles.resumeBtn}
-            onClick={() => window.open("./resume.pdf", "_blank")}
+            onClick={() => window.open("./Resume.pdf", "_blank")}
           >
             Resume
           </button>
@@ -31,12 +31,12 @@ function Navigation() {
           >
             Profile
           </NavLink>
-          <NavLink
+          {/* <NavLink
             to="/projects"
             className={({ isActive }) => (isActive ? styles.active : "")}
           >
             Projects
-          </NavLink>
+          </NavLink> */}
           <NavLink
             to="/tools"
             className={({ isActive }) => (isActive ? styles.active : "")}
@@ -52,7 +52,7 @@ function Navigation() {
         </nav>
         <button
           className={styles.resumeBtn}
-          onClick={() => window.open("./resume.pdf", "_blank")}
+          onClick={() => window.open("./Resume.pdf", "_blank")}
         >
           Resume
         </button>

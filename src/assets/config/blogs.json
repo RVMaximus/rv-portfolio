@@ -1,0 +1,10 @@
+[
+  {
+    "id": "jserror",
+    "title": "Demystifying JavaScript's Event Loop and the 'Maximum Call Stack Size Exceeded' Error",
+    "description": "Explore the inner workings of JavaScript’s event loop in this blog as we break down how asynchronous code is executed behind the scenes. Learn why functions don’t block each other, how the call stack and task queue interact, and what causes the infamous “Maximum Call Stack Size Exceeded” error — all explained in a simple, developer-friendly way.",
+    "imgUrl": "JSError.webp",
+    "link": "https://medium.com/@ravirajaravichandran/demystifying-javascripts-event-loop-and-the-maximum-call-stack-size-exceeded-error-8d8d97f46d0e",
+    "tags": ["JS", "Asynchronous", "Event loop"]
+  }
+]

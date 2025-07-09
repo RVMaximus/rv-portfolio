@@ -32,6 +32,10 @@
             }
         }
 
+        .multi, .health, .webXR{
+            font-family: "Fuzzy Bubbles", sans-serif;
+        }
+
         .multi {
             background: #4bcc72;
             background: radial-gradient(circle, rgba(75, 204, 114, 1) 0%, rgba(169, 87, 199, 1) 51%, rgba(237, 221, 83, 1) 100%);
@@ -68,7 +72,7 @@
 
         .experienceContainer {
             margin: 2rem 0;
-            border: 1px solid rgba(255, 0, 0, 0.23);
+            box-shadow: var(--cardBoxShadow);
             border-radius: 20px;
             padding: 1rem;
 
@@ -103,7 +107,7 @@
 
         .educationContainer {
             margin: 2rem 0;
-            border: 1px solid rgba(255, 0, 0, 0.23);
+            box-shadow: var(--cardBoxShadow);
             border-radius: 20px;
             padding: 1rem;
 
@@ -149,4 +153,14 @@
             }
         }
     }
+}
+
+[data-theme="light"] {
+    --cardBackground: rgb(255 255 255 / 33%);
+    --cardBoxShadow: rgb(217 217 217) 0px 0px 0px 1px inset;
+}
+
+[data-theme="dark"] {
+    --cardBackground: rgb(34, 34, 34);
+    --cardBoxShadow: rgb(93 93 93 / 79%) 0px 0px 0px 1px inset;
 }
