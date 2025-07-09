@@ -11,7 +11,12 @@ function Navigation() {
               ravi
             </NavLink>
           </h2>
-          <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
+          <a
+            href="/Resume.pdf"
+            download
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button className={styles.resumeBtn}>Resume</button>
           </a>
           {/* <button
@@ -53,7 +58,12 @@ function Navigation() {
             Blogs
           </NavLink>
         </nav>
-        <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
+        <a
+          href="/Resume.pdf"
+          download
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button className={styles.resumeBtn}>Resume</button>
         </a>
       </header>
