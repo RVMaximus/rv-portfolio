@@ -13,7 +13,7 @@ function Navigation() {
           </h2>
           <button
             className={styles.resumeBtn}
-            onClick={() => window.open("./Resume.pdf", "_blank")}
+            onClick={() => window.open("/Resume.pdf", "_blank")}
           >
             Resume
           </button>
@@ -52,7 +52,7 @@ function Navigation() {
         </nav>
         <button
           className={styles.resumeBtn}
-          onClick={() => window.open("./Resume.pdf", "_blank")}
+          onClick={() => window.open("/Resume.pdf", "_blank")}
         >
           Resume
         </button>
