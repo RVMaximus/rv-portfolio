@@ -12,7 +12,7 @@ function Navigation() {
             </NavLink>
           </h2>
           <a
-            href="/Resume.pdf"
+            href="./Resume.pdf"
             download
             target="_blank"
             rel="noopener noreferrer"
@@ -59,7 +59,7 @@ function Navigation() {
           </NavLink>
         </nav>
         <a
-          href="/Resume.pdf"
+          href="./Resume.pdf"
           download
           target="_blank"
           rel="noopener noreferrer"
