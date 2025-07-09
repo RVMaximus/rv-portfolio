@@ -11,12 +11,15 @@ function Navigation() {
               ravi
             </NavLink>
           </h2>
-          <button
+          <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
+            <button className={styles.resumeBtn}>Resume</button>
+          </a>
+          {/* <button
             className={styles.resumeBtn}
             onClick={() => window.open("/Resume.pdf", "_blank")}
           >
             Resume
-          </button>
+          </button> */}
         </div>
         <nav className={styles.nav}>
           <NavLink
@@ -50,12 +53,9 @@ function Navigation() {
             Blogs
           </NavLink>
         </nav>
-        <button
-          className={styles.resumeBtn}
-          onClick={() => window.open("/Resume.pdf", "_blank")}
-        >
-          Resume
-        </button>
+        <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
+          <button className={styles.resumeBtn}>Resume</button>
+        </a>
       </header>
     </>
   );
