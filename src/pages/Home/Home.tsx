@@ -1,7 +1,11 @@
 import { Responsive, WidthProvider } from "react-grid-layout";
 import styles from "./Home.module.scss";
+import { useState } from "react";
 
 export function Home() {
+
+  const [currentTheme, setCurrentTheme] = useState(document.documentElement.getAttribute("data-theme"));
+
   const ResponsiveGridLayout = WidthProvider(Responsive);
 
   const breakpoints = { lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 };
@@ -39,6 +43,12 @@ export function Home() {
       { i: "contact", x: 2, y: 8.2, w: 2, h: 1.2 },
     ],
   };
+
+  const toggleTheme = () => {
+    const newTheme = currentTheme === "light" ? "dark" : "light";
+    setCurrentTheme(newTheme);
+    document.documentElement.setAttribute("data-theme", newTheme);
+  }
 
   const getIntro = () => {
     return (
@@ -114,18 +124,14 @@ export function Home() {
     );
   };
 
-  const getMap = () => {
+  const getMode = () => {
     return (
       <>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d125322.5134688553!2d76.88483286798547!3d11.01395778797012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1751524025436!5m2!1sen!2sin&zoom=10&disableDefaultUI=true"
-          width="100%"
-          height="100%"
-          allowFullScreen={false}
-          referrerPolicy="no-referrer-when-downgrade"
-          loading="lazy"
-          style={{ border: 0 }}
-        ></iframe>
+        <div className={styles.modeContainer}>
+          <div className={`${styles.modeBg} ${styles[currentTheme!]}`}>
+            {currentTheme === "dark" ? <img src="./moon.svg"/> : <img src="./sun.svg"/>}
+          </div>
+        </div>
       </>
     );
   };
@@ -236,8 +242,8 @@ export function Home() {
         <div key={"git"} className={`${styles.cardDivCommon}`}>
           {getGitHub()}
         </div>
-        <div key={"map"} className={`${styles.mapDiv}`}>
-          {getMap()}
+        <div key={"map"} className={`${styles.cardDivCommon} ${styles.modeDiv}`} onClick={toggleTheme}>
+          {getMode()}
         </div>
         <div
           key={"spotify"}

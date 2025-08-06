@@ -96,9 +96,34 @@
         }
     }
 
-    .mapDiv {
-        iframe {
+    .modeDiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .modeContainer {
+            height: 70%;
+            width: 90%;
+            box-shadow: var(--cardBoxShadow);
             border-radius: 30px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+
+            .modeBg {
+                position: absolute;
+                background-color: black;
+                border-radius: 50%;
+                padding: 5px;
+                
+            }
+            .dark{
+                left: 6px;
+            }
+            .light{
+                right: 6px;
+            }
         }
     }
 

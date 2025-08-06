@@ -14,7 +14,7 @@
 /* Set default theme variables */
 :root {
   --font-family: 'Poppins', sans-serif;
-  --transition: 0.3s ease;
+  --transition: 3s ease;
 }
 
 [data-theme="light"] {
