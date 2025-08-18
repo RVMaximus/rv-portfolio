@@ -2,7 +2,7 @@
     {
         "id": "portfolio",
         "title": "Personal Portfolio",
-        "description": "This is my portfolio",
+        "description": "A personal portfolio website built with React JS, showcasing my professional journey and creative work. It features my introduction, a collection of projects, detailed work experience, the tools & technologies I use, and links to my blogs and social media.",
         "link": "https://devrv.vercel.app/",
         "githubLink": "https://github.com/RVMaximus/rv-portfolio",
         "techStack": ["React JS", "SCSS", "Vite", "Vercel"]
@@ -10,7 +10,7 @@
     {
         "id": "modelViewer",
         "title": "3D Model Viewer and Editor",
-        "description": "This is my model viewer",
+        "description": "An interactive 3D Model Viewer built with React.js and Babylon.js, allowing users to upload 3D models, explore their meshes, adjust material properties, and customize the environment for an immersive viewing experience",
         "link": "https://rvviewer.vercel.app/",
         "githubLink": "https://github.com/RVMaximus/modelviewer",
         "techStack": ["React", "React-Redux", "Babylon JS", "SCSS", "Vite", "Vercel"]
