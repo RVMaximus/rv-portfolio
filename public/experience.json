@@ -1,0 +1,20 @@
+[
+    {
+        "id": "brahmarsiveSenior",
+        "title": "Senior Software Engineer - I",
+        "org": "Brahmarsive INC",
+        "duration": "April 2023 - Present",
+        "location": "Coimbatore",
+        "roleDesc": "Full-stack developer building immersive web and VR applications, including advanced healthcare simulations",
+        "website": "https://brahmarsive.com/"
+    },
+    {
+        "id": "nallasAssociate",
+        "title": "Associate Software Engineer",
+        "org": "Nallas software solutions",
+        "duration": "Oct 2021 - March 2023",
+        "location": "Coimbatore",
+        "roleDesc": "I began as a trainee learning .NET Core and later worked with Sitecore CMS to build a full client website with my team, gaining hands-on experience in content-driven development and real-world project collaboration.",
+        "website": "https://nallas.com/"
+    }
+]

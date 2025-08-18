@@ -66,11 +66,11 @@
     .experienceDiv {
         padding: 1rem;
 
-        .experienceHeader {
+        .experienceHeader, .educationHeader {
             font-family: "Fuzzy Bubbles", sans-serif;
         }
 
-        .experienceContainer {
+        .experienceContainer, .educationContainer {
             margin: 2rem 0;
             box-shadow: var(--cardBoxShadow);
             border-radius: 20px;
@@ -83,38 +83,44 @@
             }
         }
 
-        .projectContainer {
+        .roleContainer {
             margin: 1rem 0;
 
-            .projectImg {
-                max-width: 40%;
-                margin: 1rem 0;
-                border-radius: 20px;
-            }
-
-            .projectDesc {
+            .roleDesc {
                 margin: 1rem 0;
             }
         }
     }
 
-    .educationDiv {
+    .projectsDiv {
         padding: 1rem;
 
-        .educationHeader {
+        .projectsHeader {
             font-family: "Fuzzy Bubbles", sans-serif;
         }
 
-        .educationContainer {
-            margin: 2rem 0;
-            box-shadow: var(--cardBoxShadow);
-            border-radius: 20px;
-            padding: 1rem;
+        .projectsContainer {
+            .projectDiv {
+                @include commonCard;
+                height: 35vh;
+                margin: 2rem 0;
+                padding: 1rem;
 
-            .eduDiv {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
+                .projectDescription {
+                    margin: 10px 0;
+                    height: 50%;
+                    overflow-y: auto;
+                }
+
+                .projectLinks{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .projectGithub{
+                        cursor: pointer;
+                    }
+                }
             }
         }
     }
@@ -133,8 +139,8 @@
         }
 
         .experienceDiv {
-            .projectContainer {
-                .projectDesc {
+            .roleContainer {
+                .roleDesc {
                     font-size: 0.8rem;
                 }
             }

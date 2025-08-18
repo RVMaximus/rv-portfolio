@@ -1,0 +1,18 @@
+[
+    {
+        "id": "portfolio",
+        "title": "Personal Portfolio",
+        "description": "This is my portfolio",
+        "link": "https://devrv.vercel.app/",
+        "githubLink": "https://github.com/RVMaximus/rv-portfolio",
+        "techStack": ["React JS", "SCSS", "Vite", "Vercel"]
+    },
+    {
+        "id": "modelViewer",
+        "title": "3D Model Viewer and Editor",
+        "description": "This is my model viewer",
+        "link": "https://rvviewer.vercel.app/",
+        "githubLink": "https://github.com/RVMaximus/modelviewer",
+        "techStack": ["React", "React-Redux", "Babylon JS", "SCSS", "Vite", "Vercel"]
+    }
+]
