@@ -71,7 +71,7 @@ export function Profile() {
     xs: [
       { i: "profile", x: 0, y: 0, w: 6, h: 1.5 },
       { i: "experience", x: 0, y: 1.5, w: 6, h: 6.5 },
-      { i: "projects", x: 0, y: 10, w: 6, h: 3.5 },
+      { i: "projects", x: 0, y: 10, w: 6, h: 5 },
     ],
   };
 
